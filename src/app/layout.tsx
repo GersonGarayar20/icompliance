@@ -21,7 +21,7 @@ const geistMono = localFont({
 }); */
 
 export const metadata: Metadata = {
-  title: "Instituto Peruano de Compliance",
+  title: "Eventos - Instituto Peruano de Compliance",
   description: "IPC Instituto Peruano de Compliance",
 };
 
