@@ -10,6 +10,19 @@ import EventDescription from "./event-description";
 import SobreElPrograma from "./sobre-el-programa";
 import VideoEvent from "./video-event";
 import Galeria from "./galeria";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Eventos - Instituto Peruano de Compliance",
+  description:
+    "I Foro Internacional: Women in Compliance IPC 2024 en Lima, Perú, reúne a mujeres líderes y aprendices en cumplimiento para fomentar el empoderamiento, la igualdad de oportunidades y el liderazgo femenino en el Compliance.",
+  openGraph: {
+    title: "I Foro Internacional: Women in Compliance IPC 2024 - Lima, Perú",
+    description:
+      "I Foro Internacional: Women in Compliance IPC 2024 en Lima, Perú, reúne a mujeres líderes y aprendices en cumplimiento para fomentar el empoderamiento, la igualdad de oportunidades y el liderazgo femenino en el Compliance.",
+    images: "/eventos/1/fondo.jpg",
+  },
+};
 
 export default function EventPage() {
   return (
