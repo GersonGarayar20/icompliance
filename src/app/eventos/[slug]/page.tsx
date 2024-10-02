@@ -40,7 +40,7 @@ export default function EventPage() {
             WOMEN IN COMPLIANCE
           </h1>
           <p className="md:text-2xl">
-            &quot;La conferencia anual que reunirá a las mujees líderes en
+            &quot;La conferencia anual que reunirá a las mujeres líderes en
             Compliance del Perú y LATAM&quot;
           </p>
           <div className="flex gap-6">
