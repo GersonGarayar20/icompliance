@@ -73,7 +73,7 @@ export const data = [
   {
     id: 5,
     title:
-      "Mesa redonda N° 1 - paridad de género en el directorio y las gerencias",
+      "Mesa redonda N° 1 - Paridad de Género en el Directorio y las Gerencias",
     description:
       "El Rol de las Mujeres en las gerencias de Compliance y en la Alta Dirección. Compliance Laboral e implementación de Planes de Igualdad y Retribución en las Empresas. Empoderamiento de las mujeres en Compliance.",
     date: "2024-10-04",
@@ -143,7 +143,7 @@ export const data = [
     title:
       "Mesa Redonda N°2: Grandes Desafíos y Oportunidades de las Mujeres en Compliance",
     description:
-      "Prevención, Supervisión y Persecusión de Lavado de Activos Sistemas y Herramientas de Inteligencia Financiera Tecnología en Compliance: Riesgos e Innovaciones",
+      "Prevención, Supervisión y Persecusión de Lavado de Activos. Sistemas y Herramientas de Inteligencia Financiera Tecnología en Compliance: Riesgos e Innovaciones.",
     date: "2024-10-04",
     time: "12:00 P.M – 12:50 P.M",
     location: "Av. Santo Toribio 143 - San Isidro 15073",
