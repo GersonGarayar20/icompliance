@@ -25,53 +25,29 @@ export default function EventsPage() {
               <p>Puedes encontrar más de 200 eventos</p>
               <h3 className="text-4xl">Próximos Eventos</h3>
               <article className="grid grid-cols-2 gap-6">
-                {events.map(
-                  ({
-                    id,
-                    attendees,
-                    date,
-                    description,
-                    location,
-                    organizer,
-                    time,
-                    title,
-                    image,
-                  }) => (
-                    <EventCard
-                      key={id}
-                      id={id}
-                      title={title}
-                      location={location}
-                      date={date}
-                      image={image}
-                    />
-                  )
-                )}
+                {events.map(({ id, date, location, title, image }) => (
+                  <EventCard
+                    key={id}
+                    id={id}
+                    title={title}
+                    location={location}
+                    date={date}
+                    image={image}
+                  />
+                ))}
               </article>
               <h3 className="text-4xl">Eventos Previos</h3>
               <article className="grid grid-cols-3 gap-6">
-                {events.map(
-                  ({
-                    id,
-                    attendees,
-                    date,
-                    description,
-                    location,
-                    organizer,
-                    time,
-                    title,
-                    image,
-                  }) => (
-                    <EventCard2
-                      key={id}
-                      id={id}
-                      title={title}
-                      price={1000}
-                      date={date}
-                      image={image}
-                    />
-                  )
-                )}
+                {events.map(({ id, date, title, image }) => (
+                  <EventCard2
+                    key={id}
+                    id={id}
+                    title={title}
+                    price={1000}
+                    date={date}
+                    image={image}
+                  />
+                ))}
               </article>
             </div>
           </Container>

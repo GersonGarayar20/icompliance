@@ -8,7 +8,7 @@ interface Props {
   price: number;
 }
 
-export default function EventCard2({ date, id, image, price, title }: Props) {
+export default function EventCard2({ date, image, price, title }: Props) {
   return (
     <div className="h-96 relative flex flex-col justify-end">
       <img

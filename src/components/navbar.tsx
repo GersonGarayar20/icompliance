@@ -48,7 +48,7 @@ export default function Navbar() {
       >
         <header className="h-full max-w-7xl mx-auto flex items-center gap-3">
           <div className="flex-1">
-            <Link href={"/"}>
+            <Link href={links[0].link}>
               <img
                 className="h-[80px] "
                 src={isScrolled ? "/logo.png" : "/logo-white.png"}
