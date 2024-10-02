@@ -13,7 +13,7 @@ export default function Galeria() {
   return (
     <Container>
       <h2 className="md:text-5xl text-3xl text-center mb-6">
-        Galería De Eventos Pasados
+        Galería de Eventos Pasados
       </h2>
       <div className="px-12">
         <Carousel

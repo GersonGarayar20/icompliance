@@ -3,7 +3,7 @@ export const data = [
     id: 1,
     title: "Registro de asistentes:",
     description:
-      "Loren ipsumoren ipsumoren ipsumoren ipsumoren ipsumoren ipsumoren ipsumoren ipsumoren ipsum",
+      "Recomendamos llegar con la debida antelación. Para un registro ordenado.",
     date: "2024-10-04",
     time: "8:30 A.M – 08:45 A.M",
     location: "Av. Santo Toribio 143 - San Isidro 15073",
@@ -30,7 +30,7 @@ export const data = [
     title: "Storytelling in Compliance",
     description: "",
     date: "2024-10-04",
-    time: "9:00 A.M – 09:15",
+    time: "9:00 A.M – 09:15 A.M",
     location: "Av. Santo Toribio 143 - San Isidro 15073",
     speakers: [
       {
@@ -73,7 +73,7 @@ export const data = [
   {
     id: 5,
     title:
-      "Mesa redonda n° 1 - paridad de género en el directorio y las gerencias",
+      "Mesa redonda N° 1 - paridad de género en el directorio y las gerencias",
     description:
       "El Rol de las Mujeres en las gerencias de Compliance y en la Alta Dirección. Compliance Laboral e implementación de Planes de Igualdad y Retribución en las Empresas. Empoderamiento de las mujeres en Compliance.",
     date: "2024-10-04",
@@ -103,7 +103,7 @@ export const data = [
     title: "COFFEE BREAK",
     description: "",
     date: "2024-10-04",
-    time: "10:40 A.M – 11:10 A.M:",
+    time: "10:40 A.M – 11:10 A.M",
     location: "Av. Santo Toribio 143 - San Isidro 15073",
     speakers: [],
   },
@@ -177,7 +177,7 @@ export const data = [
   },
   {
     id: 10,
-    title: "Mesa Redonda N° 3 - Diversidad E Inclusión En El Compliance",
+    title: "Mesa Redonda N° 3 - Diversidad e Inclusión en el Compliance",
     description:
       "Desafíos entorno a la igualdad de género a los que se enfrentan las mujeres en los roles de cumplimiento. Políticas de diversidad e inclusión, beneficios de equipos diversos, desafíos específicos que enfrentan las mujeres y otras minorías en el cumplimiento.",
     date: "2024-10-04",
@@ -203,9 +203,9 @@ export const data = [
   },
   {
     id: 11,
-    title: "Dinámica Grupal: Mentoría y liderazgo para Mujeres en Compliance",
+    title: "Dinámica Grupal: Mentoría y Liderazgo para Mujeres en Compliance",
     description:
-      "¿Qué se requiere para ser una extraordinaria compliance officer? Habilidades clave Decisiones cruciales bajo presión en roles de Compliance muy demandantes Herramientas y estrategias para establecer relaciones profesionales de alto valor",
+      "¿Qué se requiere para ser una extraordinaria compliance officer? Habilidades clave. Decisiones cruciales bajo presión en roles de Compliance muy demandantes. Herramientas y estrategias para establecer relaciones profesionales de alto valor.",
     date: "2024-10-04",
     time: "15:20 P.M – 16:00 P.M",
     location: "Av. Santo Toribio 143 - San Isidro 15073",
@@ -213,7 +213,7 @@ export const data = [
       {
         image: "/eventos/1/speakers/carolina-saenz.jpg",
         name: "Carolina Saenz",
-        position: "CEO en Let´s Compliance",
+        position: "CEO en Let's Compliance",
       },
       {
         image: "/eventos/1/speakers/sandra-documet.jpg",
@@ -272,7 +272,7 @@ export const data = [
   },
   {
     id: 14,
-    title: "Drunch De Cierre & Networking",
+    title: "Drunch de Cierre & Networking",
     description: "",
     date: "2024-10-04",
     time: "16:25 P.M – 17:25 P.M",

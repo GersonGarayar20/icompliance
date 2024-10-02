@@ -7,7 +7,7 @@ export default function Fecha() {
       <Card icon={<CalendarIcon />}>
         <p>
           <strong>Fecha: </strong>
-          <span>03 de octubre</span>
+          <span>04 de octubre</span>
         </p>
       </Card>
       <Card icon={<ClockIcon />}>

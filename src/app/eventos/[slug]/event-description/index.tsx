@@ -29,13 +29,13 @@ export default function EventDescription() {
             ubicacion="Av. Santo Toribio 143 - San Isidro 15073"
           />
           <p>
-            Desde el IPC, consideramos crucial fomentar un espacio de
+            Desde el IPC, consideramos crucial fomentar un espacio de{" "}
             <strong>conexión</strong> entre todas las redes de{" "}
             <strong>networking</strong> y{" "}
-            <strong>comunidades de mujeres</strong> que fomente el
+            <strong>comunidades de mujeres</strong> que fomente el{" "}
             <strong>empoderamiento</strong>, la{" "}
             <strong>igualdad de oportunidades</strong> y el{" "}
-            <strong>reconocimiento del liderazgo femenino</strong> en el
+            <strong>reconocimiento del liderazgo femenino</strong> en el{" "}
             <strong>Compliance</strong>.
           </p>
           <p>

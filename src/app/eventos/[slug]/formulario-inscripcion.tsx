@@ -68,7 +68,7 @@ export default function FormularioInscripcion() {
 
   return (
     <Container id="fomulario-inscripcion">
-      <h2 className="md:text-5xl text-3xl mb-6">Formulario De Inscripción</h2>
+      <h2 className="md:text-5xl text-3xl mb-6">Formulario de Inscripción</h2>
       <article className="flex md:flex-row flex-col gap-6">
         <section className="md:w-[500px] bg-white p-6 rounded-2xl flex flex-col gap-6">
           <h3 className="text-2xl">Inscríbete ahora</h3>

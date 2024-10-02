@@ -3,7 +3,7 @@ import React from "react";
 import Auspiciadores from "./auspiciadores";
 import Countdown from "./countdown";
 //import ProximosEventos from "./proximos-eventos";
-import ProcesoAdmision from "./proceso-admision";
+//import ProcesoAdmision from "./proceso-admision";
 import Notificaciones from "../notificaciones";
 import FormularioInscripcion from "./formulario-inscripcion";
 import EventDescription from "./event-description";
@@ -49,7 +49,7 @@ export default function EventPage() {
       <Galeria />
       {/* <ProximosEventos /> */}
       <Notificaciones />
-      <ProcesoAdmision />
+      {/* <ProcesoAdmision /> */}
       <FormularioInscripcion />
     </div>
   );
