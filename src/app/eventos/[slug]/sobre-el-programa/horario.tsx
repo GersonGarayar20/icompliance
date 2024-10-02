@@ -20,21 +20,21 @@ export default function Horario() {
             </div>
           </div>
           <div className="flex flex-col justify-center gap-3">
-            <h4 className="text-xl font-bold">{title}</h4>
+            <h4 className="md:text-xl text-lg font-bold">{title}</h4>
             {description ? <p className="text-sm mb-1">{description}</p> : null}
             {speakers.length > 0 ? (
               <div className="flex flex-col gap-3">
                 {speakers.map(({ image, name, position }) => (
                   <div key={name} className="flex gap-3">
-                    <div className="aspect-square bg-neutral-100 size-20">
+                    <div className="aspect-square flex-none bg-neutral-100 size-20">
                       {image ? (
                         <img className="rounded" src={image} alt={name} />
                       ) : null}
                     </div>
                     <div>
-                      <h5 className="text-lg font-bold">{name}</h5>
+                      <h5 className="md:text-lg font-bold">{name}</h5>
 
-                      <p className="text-sm">{position}</p>
+                      <p className="md:text-sm text-xs">{position}</p>
                     </div>
                   </div>
                 ))}

@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { sendMail } from "@/lib/send-mail";
+import Link from "next/link";
 import React, { useState } from "react";
 
 export default function FormularioInscripcion() {
@@ -67,7 +68,7 @@ export default function FormularioInscripcion() {
 
   return (
     <Container id="fomulario-inscripcion">
-      <h2 className="text-4xl mb-6">Formulario De Inscripción</h2>
+      <h2 className="md:text-5xl text-3xl mb-6">Formulario De Inscripción</h2>
       <article className="flex md:flex-row flex-col gap-6">
         <section className="md:w-[500px] bg-white p-6 rounded-2xl flex flex-col gap-6">
           <h3 className="text-2xl">Inscríbete ahora</h3>
@@ -112,7 +113,7 @@ export default function FormularioInscripcion() {
               value={formData.mensaje}
               onChange={handleInputChange}
             />
-            <div className="flex gap-1">
+            <div className="flex gap-2">
               <Checkbox
                 name="politica_privacidad"
                 checked={formData.politica_privacidad}
@@ -123,8 +124,18 @@ export default function FormularioInscripcion() {
                 }}
                 required
               />
-              <Label className="mt-1">
-                Acepto la Política de Privacidad del IPC
+              <Label className="">
+                Acepto la
+                <Link
+                  className="text-sky-500"
+                  href={
+                    "https://icompliancepe.com/wp-content/uploads/2024/09/Politica-de-Privacidad-IPC.pdf"
+                  }
+                >
+                  {" "}
+                  Política de Privacidad{" "}
+                </Link>
+                del IPC
               </Label>
             </div>
             <Button type="submit" disabled={loading} className="bg-blue-500">
@@ -139,8 +150,8 @@ export default function FormularioInscripcion() {
             src="/eventos/1/formulario-evento.jpg"
             alt="Imagen evento"
           />
-          <div className="absolute inset-0 flex flex-col justify-end p-12">
-            <p className="text-4xl text-white">
+          <div className="absolute inset-0 flex flex-col justify-end md:p-12 p-6">
+            <p className="md:text-4xl text-xl text-white">
               Certificaciones, membresías y capacitaciones exclusivas a un click
               de distancia.
             </p>

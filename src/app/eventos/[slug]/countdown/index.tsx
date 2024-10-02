@@ -8,10 +8,10 @@ export default function Countdown() {
     <Container className="bg-gradient-to-r from-[#52adeb] to-[#014DBE]">
       <article className="flex md:flex-row flex-col items-center gap-6">
         <div className="flex-1 flex flex-col md:items-start items-center gap-6">
-          <h3 className="text-white text-5xl md:text-start text-center">
+          <h3 className="text-white md:text-5xl text-3xl md:text-start text-center">
             Loren ipsum Loren ipsum Loren ipsum
           </h3>
-          <p className="text-xl text-white md:text-start text-center">
+          <p className="md:text-xl text-white md:text-start text-center">
             Aquí podrás encontrar respuesta a consultas sobre el programa
           </p>
           <Link

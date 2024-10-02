@@ -29,27 +29,52 @@ export default function EventDescription() {
             ubicacion="Av. Santo Toribio 143 - San Isidro 15073"
           />
           <p>
-            Desde el IPC, consideramos crucial fomentar un espacio de conexión
-            entre todas las redes de networking y comunidades de mujeres que
-            fomente el empoderamiento, la igualdad de oportunidades y el
-            reconocimiento del liderazgo femenino en el Compliance. Por ello,
-            este Foro único tiene como propósito facilitar el intercambio de
-            experiencias y construir relaciones entre todas las mujeres líderes
-            y aprendices en cumplimiento, así como abordar los nuevos desafíos
-            organizativos que ellas enfrentan en las empresas, rompiendo
-            estereotipos. El Cumplimiento Normativo se ha convertido en un pilar
-            indispensable para el éxito organizacional y todas las mujeres que
-            se dedican al Compliance en nuestra región son conscientes que su
-            rol es clave no solo para asegurar el cumplimiento de regulaciones
-            locales e internacionales, sino también para impulsar una cultura de
-            integridad y equidad de género dentro de las empresas, en un entorno
-            empresarial dinámico y diverso. En respuesta a esta necesidad,
-            presentamos el I FORO INTERNACIONAL: WOMEN IN COMPLIANCE IPC 2024,
-            con alta expectativa del público y con sede en Lima - Perú, en el
-            auditorio principal de PwC. Este evento anual, el primero en el
-            Perú, explorará las últimas tendencias, desafíos y mejores prácticas
-            de Compliance, bajo una experiencia única de Network.
+            Desde el IPC, consideramos crucial fomentar un espacio de
+            <strong>conexión</strong> entre todas las redes de{" "}
+            <strong>networking</strong> y{" "}
+            <strong>comunidades de mujeres</strong> que fomente el
+            <strong>empoderamiento</strong>, la{" "}
+            <strong>igualdad de oportunidades</strong> y el{" "}
+            <strong>reconocimiento del liderazgo femenino</strong> en el
+            <strong>Compliance</strong>.
           </p>
+          <p>
+            Por ello, este Foro único tiene como propósito facilitar el
+            intercambio de <strong>experiencias</strong> y construir{" "}
+            <strong>relaciones</strong> entre todas las{" "}
+            <strong>mujeres líderes</strong> y <strong>aprendices</strong> en{" "}
+            <strong>cumplimiento</strong>, así como abordar los nuevos{" "}
+            <strong>desafíos organizativos</strong> que ellas enfrentan en las
+            empresas, rompiendo <strong>estereotipos</strong>.
+          </p>
+          <p>
+            El <strong>Cumplimiento Normativo</strong> se ha convertido en un
+            pilar indispensable para el <strong>éxito organizacional</strong> y
+            todas las mujeres que se dedican al <strong>Compliance</strong> en
+            nuestra región son conscientes que su rol es clave no solo para
+            asegurar el{" "}
+            <strong>
+              cumplimiento de regulaciones locales e internacionales
+            </strong>
+            , sino también para impulsar una cultura de{" "}
+            <strong>integridad</strong> y <strong>equidad de género</strong>{" "}
+            dentro de las empresas, en un entorno empresarial{" "}
+            <strong>dinámico</strong> y <strong>diverso</strong>.
+          </p>
+          <p>
+            En respuesta a esta necesidad, presentamos el{" "}
+            <strong>I FORO INTERNACIONAL: WOMEN IN COMPLIANCE IPC 2024</strong>,
+            con alta expectativa del público y con sede en{" "}
+            <strong>Lima - Perú</strong>, en el{" "}
+            <strong>auditorio principal de PwC</strong>.
+          </p>
+          <p>
+            Este <strong>evento anual</strong>, el primero en el Perú, explorará
+            las últimas <strong>tendencias</strong>, <strong>desafíos</strong> y
+            mejores <strong>prácticas</strong> de <strong>Compliance</strong>,
+            bajo una experiencia única de <strong>Network</strong>.
+          </p>
+
           <div>
             <Link
               className="block md:max-w-60 py-3 px-6 rounded-2xl text-center text-white bg-blue-500"

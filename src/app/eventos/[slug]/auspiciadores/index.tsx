@@ -14,7 +14,7 @@ export default function Auspiciadores() {
             <div className="flex flex-wrap justify-center">
               {images.map(({ image, title }) => (
                 <img
-                  className="size-60 object-contain"
+                  className="md:w-60 size-1/2 aspect-square object-contain p-3"
                   key={title}
                   src={image}
                   alt={title}

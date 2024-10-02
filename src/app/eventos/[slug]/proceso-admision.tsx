@@ -95,7 +95,7 @@ const data = [
 export default function ProcesoAdmision() {
   return (
     <Container className="py-12">
-      <h2 className="text-5xl mb-6">Proceso de admisión</h2>
+      <h2 className="md:text-5xl text-3xl mb-6">Proceso de admisión</h2>
       <div className="grid md:grid-cols-4 gap-4">
         {data.map(({ description, icon, title }, i) => (
           <div

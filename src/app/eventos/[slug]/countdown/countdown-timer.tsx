@@ -44,7 +44,7 @@ const CountdownTimer = () => {
   return (
     <div className="">
       {timeLeft.days !== undefined ? (
-        <div className="grid grid-cols-4 gap-3">
+        <div className="flex gap-3 px-3">
           <Contador title="Días" value={timeLeft.days} />
           <Contador title="Horas" value={timeLeft.hours} />
           <Contador title="Minutos" value={timeLeft.minutes} />
@@ -66,10 +66,10 @@ const Contador = ({
   value: number | undefined;
   title: string;
 }) => (
-  <div className="flex flex-col gap-3">
-    <div className="md:size-32 size-20 md:text-6xl text-4xl font-bold rounded-xl bg-white flex justify-center items-center">
+  <div className="flex flex-col items-center gap-3">
+    <div className="aspect-square md:w-32 w-16 md:text-6xl text-4xl font-bold rounded-xl bg-white flex justify-center items-center">
       <span className="mt-2">{value ? value : 0}</span>
     </div>
-    <p className="text-center text-white text-xl">{title}</p>
+    <p className="text-center text-white md:text-xl">{title}</p>
   </div>
 );
