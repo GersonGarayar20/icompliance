@@ -7,11 +7,11 @@ export default function Auspiciadores() {
   return (
     <Container>
       <article className="flex flex-col items-center gap-6">
-        <h2 className="text-6xl mb-20">Auspiciadores</h2>
+        <h2 className="md:text-6xl text-4xl mb-20">Auspiciadores</h2>
         {data.map(({ images, title }) => (
           <div key={title}>
             <h3 className="text-2xl text-center">{title}</h3>
-            <div className="flex">
+            <div className="flex flex-wrap justify-center">
               {images.map(({ image, title }) => (
                 <img
                   className="size-60 object-contain"
@@ -23,7 +23,12 @@ export default function Auspiciadores() {
             </div>
           </div>
         ))}
-        <Link href={""}>AUSPICIA AQUÍ</Link>
+        <Link
+          className="py-4 px-12 rounded-full text-white bg-gradient-to-r from-[#16BFD0] to-[#5271D3] hover:from-[#5271D3] hover:to-[#16BFD0]"
+          href={"#fomulario-inscripcion"}
+        >
+          AUSPICIA AQUÍ
+        </Link>
       </article>
     </Container>
   );

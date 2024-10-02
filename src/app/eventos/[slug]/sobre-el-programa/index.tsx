@@ -2,6 +2,7 @@ import React from "react";
 import Container from "@/components/container";
 import Horario from "./horario";
 import Fecha from "./fecha";
+import Link from "next/link";
 
 export default function SobreElPrograma() {
   return (
@@ -12,8 +13,14 @@ export default function SobreElPrograma() {
           <Horario />
         </article>
         <aside className="md:w-96">
-          <div className="sticky top-[120px]">
+          <div className="sticky top-[120px] flex flex-col gap-6">
             <Fecha />
+            <Link
+              className="block py-3 px-6 rounded-2xl text-center text-white bg-blue-500"
+              href={"#fomulario-inscripcion"}
+            >
+              Inscríbete ahora
+            </Link>
           </div>
         </aside>
       </section>

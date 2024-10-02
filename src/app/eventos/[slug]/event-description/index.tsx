@@ -7,8 +7,8 @@ import GaleriaEvento from "./galeria-evento";
 export default function EventDescription() {
   return (
     <Container>
-      <article className="flex gap-6">
-        <aside className="w-96">
+      <article className="flex md:flex-row flex-col-reverse gap-6">
+        <aside className="md:w-96">
           <GaleriaEvento />
         </aside>
         <div className="flex-1 flex flex-col gap-6">
@@ -52,8 +52,8 @@ export default function EventDescription() {
           </p>
           <div>
             <Link
-              className="block max-w-60 py-3 px-6 rounded-2xl text-center text-white bg-blue-500"
-              href={""}
+              className="block md:max-w-60 py-3 px-6 rounded-2xl text-center text-white bg-blue-500"
+              href={"#fomulario-inscripcion"}
             >
               Inscríbete ahora
             </Link>

@@ -4,7 +4,7 @@ import { images } from "../galeria/images";
 export default function GaleriaEvento() {
   return (
     <div>
-      <h3 className="text-2xl">Galería del Evento</h3>
+      <h3 className="text-3xl font-bold mb-2">Galería del Evento</h3>
       <div className="grid grid-cols-2 gap-1">
         {images.slice(0, 6).map(({ image, title }) => (
           <div key={title} className="aspect-square">

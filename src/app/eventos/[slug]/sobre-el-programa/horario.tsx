@@ -4,7 +4,7 @@ import { data } from "./data";
 export default function Horario() {
   return (
     <div className="bg-white flex flex-col p-6 rounded-2xl border shadow">
-      <div>
+      <div className="flex justify-center md:justify-start">
         <button className="text-2xl py-2 px-4 border-b-8 border-blue-500 relative mb-4">
           04 OCTUBRE
           <div className="absolute left-0 -bottom-3 w-full flex justify-center">
@@ -13,7 +13,7 @@ export default function Horario() {
         </button>
       </div>
       {data.map(({ description, id, speakers, time, title }) => (
-        <div key={id} className="flex gap-6 border-b py-6">
+        <div key={id} className="flex md:flex-row flex-col gap-6 border-b py-6">
           <div className="flex-none w-48">
             <div className="bg-gradient-to-r from-[#52adeb] to-[#014DBE] pt-3 pb-2 px-4 rounded-full text-white text-sm text-center">
               {time}

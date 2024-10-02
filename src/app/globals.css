@@ -137,6 +137,9 @@ body {
   body {
     @apply bg-background text-[#154979];
   }
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 .fade-animate {

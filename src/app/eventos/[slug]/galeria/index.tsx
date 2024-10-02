@@ -11,7 +11,7 @@ import {
 
 export default function Galeria() {
   return (
-    <Container>
+    <Container className="px-12">
       <h2 className="text-4xl text-center mb-6">Galería De Eventos Pasados</h2>
       <Carousel
         className=""

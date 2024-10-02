@@ -19,18 +19,22 @@ export default function EventPage() {
         className="bg-gradient-to-tr from-pink-500/60 to-red-500/60"
       >
         <div className="h-full py-32 flex flex-col justify-end gap-6 text-white">
-          <img className="w-60" src="/logo-white.png" alt="logo" />
-          <p className="text-4xl font-light">I FORO INTERNACIONAL</p>
-          <h1 className="text-9xl font-bold">WOMEN IN COMPLIANCE</h1>
-          <p className="text-2xl">
+          <img className="md:w-60 w-40" src="/logo-white.png" alt="logo" />
+          <p className="md:text-4xl text-2xl font-light">
+            I FORO INTERNACIONAL
+          </p>
+          <h1 className="md:text-9xl text-4xl font-bold">
+            WOMEN IN COMPLIANCE
+          </h1>
+          <p className="md:text-2xl">
             &quot;La conferencia anual que reunirá a las mujees líderes en
             Compliance del Perú y LATAM&quot;
           </p>
           <div className="flex gap-6">
-            <p className="text-4xl font-bold">
+            <p className="md:text-4xl text-xl font-bold">
               4 <span className="text-pink-300">OCT</span> 2024
             </p>
-            <p className="text-4xl font-bold">Lima, Perú</p>
+            <p className="md:text-4xl text-xl font-bold">Lima, Perú</p>
           </div>
         </div>
       </Hero>

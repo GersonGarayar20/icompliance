@@ -67,7 +67,7 @@ const Contador = ({
   title: string;
 }) => (
   <div className="flex flex-col gap-3">
-    <div className="size-32 text-6xl font-bold rounded-xl bg-white flex justify-center items-center">
+    <div className="md:size-32 size-20 md:text-6xl text-4xl font-bold rounded-xl bg-white flex justify-center items-center">
       <span className="mt-2">{value ? value : 0}</span>
     </div>
     <p className="text-center text-white text-xl">{title}</p>

@@ -108,7 +108,7 @@ export default function ProcesoAdmision() {
             </div>
             <p className="text-sm">{description}</p>
             {data.length !== i + 1 ? (
-              <div className="size-4 bg-inherit absolute bottom-8 -right-2 rotate-45"></div>
+              <div className="size-4 bg-inherit -bottom-2 right-1/2 absolute md:bottom-8 md:-right-2 rotate-45"></div>
             ) : null}
           </div>
         ))}
