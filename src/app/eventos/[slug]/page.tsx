@@ -32,7 +32,7 @@ export default function EventPage() {
         className="bg-gradient-to-tr from-pink-500/60 to-red-500/60"
       >
         <div className="h-full py-32 flex flex-col justify-end gap-6 text-white">
-          <img className="md:w-60 w-40" src="/logo-white.png" alt="logo" />
+          {/* <img className="md:w-60 w-40" src="/logo-white.png" alt="logo" /> */}
           <p className="md:text-4xl text-2xl font-light">
             I FORO INTERNACIONAL
           </p>
