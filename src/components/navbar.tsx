@@ -50,8 +50,8 @@ export default function Navbar() {
           <div className="flex-1">
             <Link href={links[0].link}>
               <img
-                className="h-[80px] "
-                src={isScrolled ? "/logo.png" : "/logo-white.png"}
+                className="h-[80px] ml-4"
+                src={isScrolled ? "/ipc.png" : "/ipc-blanco.png"}
                 alt="logo"
               />
             </Link>
