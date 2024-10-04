@@ -35,6 +35,10 @@ const plataImages = [
     title: "gesintel",
     image: "/gesintel.png",
   },
+  {
+    title: "datariesgos",
+    image: "/datariesgos.png",
+  },
 ];
 
 export const data = [
