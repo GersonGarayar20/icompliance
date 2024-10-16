@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 export default function Search() {
@@ -8,7 +10,7 @@ export default function Search() {
 
   return (
     <div>
-      <form action="" onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Busca una publicación" />
         <button>Buscar</button>
       </form>
