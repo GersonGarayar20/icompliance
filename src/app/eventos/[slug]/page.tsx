@@ -31,12 +31,12 @@ export default function EventPage() {
         image="/inicio-1.jpg"
         className="bg-gradient-to-tr from-pink-500/60 to-red-500/60"
       >
-        <div className="h-full py-32 flex flex-col justify-end gap-6 text-white">
+        <div className="h-full pt-32 2xl:pb-32 pb-24 flex flex-col justify-end gap-6 text-white">
           {/* <img className="md:w-60 w-40" src="/logo-white.png" alt="logo" /> */}
-          <p className="md:text-4xl text-2xl font-light">
+          <p className="2xl:text-4xl md:text-3xl text-2xl font-light">
             I FORO INTERNACIONAL
           </p>
-          <h1 className="md:text-9xl text-4xl font-bold">
+          <h1 className="2xl:text-9xl md:text-7xl text-4xl font-bold">
             WOMEN IN COMPLIANCE
           </h1>
           <p className="md:text-2xl">

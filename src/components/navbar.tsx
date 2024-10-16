@@ -40,73 +40,165 @@ export default function Navbar() {
     <>
       <div
         className={cn(
-          "h-[100px]  fixed top-0 inset-x-0 z-50 transition-colors",
+          "h-[100px] fixed top-0 inset-x-0 z-50 transition-colors",
           {
             "bg-white": isScrolled,
           }
         )}
       >
-        <header className="h-full max-w-7xl mx-auto flex items-center gap-3">
-          <div className="flex-1">
-            <Link href={links[0].link}>
+        <header className="h-full max-w-[1290px] mx-auto md:px-12 px-6 flex justify-between items-center gap-3">
+          <div className="flex-none">
+            <Link className="" href={links[0].link}>
               <img
-                className="h-[80px] ml-4"
+                className="h-[80px]"
                 src={isScrolled ? "/ipc.png" : "/ipc-blanco.png"}
                 alt="logo"
               />
             </Link>
           </div>
-          <nav className="md:flex gap-3 hidden">
-            {links.map(({ link, subLink, title }) => (
-              <div key={title} className="relative group">
-                <Link
+          <section className="flex items-center gap-3">
+            <nav className="2xl:flex gap-3 hidden ">
+              {links.map(({ link, subLink, title }) => (
+                <div key={title} className="relative group">
+                  {subLink ? (
+                    <div
+                      className={cn(
+                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                        {
+                          "text-[#1f2325]": isScrolled,
+                          "bg-gradient-to-r from-[#52adeb] to-[#014DBE] text-white":
+                            pathname === link,
+                        }
+                      )}
+                    >
+                      {title}
+                      <ChevronDownIcon className="size-4" />
+                    </div>
+                  ) : (
+                    <Link
+                      className={cn(
+                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                        {
+                          "text-[#1f2325]": isScrolled,
+                        }
+                      )}
+                      href={link}
+                    >
+                      {title}
+                    </Link>
+                  )}
+
+                  {subLink ? (
+                    <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">
+                      <div className="mt-3 bg-white w-96 p-2 shadow-xl rounded-2xl">
+                        {subLink.map(({ link, title }) => (
+                          <Link
+                            className="block py-2 px-4 rounded-xl hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] hover:text-white"
+                            href={link}
+                            key={title}
+                          >
+                            {title}
+                          </Link>
+                        ))}
+                      </div>
+                    </nav>
+                  ) : null}
+                </div>
+              ))}
+            </nav>
+            <nav className="md:flex gap-3 hidden 2xl:hidden">
+              {links.slice(0, 3).map(({ link, subLink, title }) => (
+                <div key={title} className="relative group">
+                  {subLink ? (
+                    <div
+                      className={cn(
+                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                        {
+                          "text-[#1f2325]": isScrolled,
+                          "bg-gradient-to-r from-[#52adeb] to-[#014DBE] text-white":
+                            pathname === link,
+                        }
+                      )}
+                    >
+                      {title}
+                      <ChevronDownIcon className="size-4" />
+                    </div>
+                  ) : (
+                    <Link
+                      className={cn(
+                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                        {
+                          "text-[#1f2325]": isScrolled,
+                        }
+                      )}
+                      href={link}
+                    >
+                      {title}
+                    </Link>
+                  )}
+
+                  {subLink ? (
+                    <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">
+                      <div className="mt-3 bg-white w-96 p-2 shadow-xl rounded-2xl">
+                        {subLink.map(({ link, title }) => (
+                          <Link
+                            className="block py-2 px-4 rounded-xl hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] hover:text-white"
+                            href={link}
+                            key={title}
+                          >
+                            {title}
+                          </Link>
+                        ))}
+                      </div>
+                    </nav>
+                  ) : null}
+                </div>
+              ))}
+
+              <div className="relative group">
+                <div
                   className={cn(
                     "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
                     {
-                      "text-[#154979]": isScrolled,
-                      "bg-gradient-to-r from-[#52adeb] to-[#014DBE] text-white":
-                        pathname === link,
+                      "text-[#1f2325]": isScrolled,
                     }
                   )}
-                  href={link}
                 >
-                  {title}
-                  {subLink ? <ChevronDownIcon className="size-4" /> : null}
-                </Link>
+                  Más
+                  <ChevronDownIcon className="size-4" />
+                </div>
 
-                {subLink ? (
-                  <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">
-                    <div className="mt-3 bg-white w-96 p-2 shadow-xl rounded-2xl">
-                      {subLink.map(({ link, title }) => (
-                        <Link
-                          className="block py-2 px-4 rounded-xl hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] hover:text-white"
-                          href={link}
-                          key={title}
-                        >
-                          {title}
-                        </Link>
-                      ))}
-                    </div>
-                  </nav>
-                ) : null}
+                <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">
+                  <div className="mt-3 bg-white w-40 p-2 shadow-xl rounded-2xl">
+                    {links.slice(3).map(({ link, title }) => (
+                      <Link
+                        className="block py-2 px-4 rounded-xl hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] hover:text-white"
+                        href={link}
+                        key={title}
+                      >
+                        {title}
+                      </Link>
+                    ))}
+                  </div>
+                </nav>
               </div>
-            ))}
-          </nav>
-          <Link
-            className="hidden py-2 px-4 text-white md:flex items-center gap-3 bg-[#014DBE] hover:brightness-95 rounded-xl"
-            href={"https://www.campuslexedu.com/"}
-          >
-            <GraduationCapIcon />
-            EDUCACION EJECUTIVA
-          </Link>
-          <button
-            className={cn("text-white mr-4 md:hidden", {
-              "text-black": isScrolled,
-            })}
-            onClick={() => setIsActive(true)}
-          >
-            <MenuIcon />
-          </button>
+            </nav>
+            <Link
+              className="hidden py-2 px-4 text-white md:flex items-center gap-3 bg-[#014DBE] hover:brightness-95 rounded-xl"
+              href={"https://www.campuslexedu.com/"}
+            >
+              <GraduationCapIcon className="flex-none" />
+              <span className="2xl:text-base text-sm">EDUCACION EJECUTIVA</span>
+            </Link>
+            <button
+              className={cn("text-white md:hidden", {
+                "text-black": isScrolled,
+              })}
+              onClick={() => setIsActive(true)}
+            >
+              <MenuIcon />
+            </button>
+          </section>
         </header>
       </div>
       <div

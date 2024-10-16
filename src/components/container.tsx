@@ -11,7 +11,7 @@ interface Props {
 export default function Container({ children, className, id }: Props) {
   return (
     <section id={id} className={cn("py-24", className)}>
-      <div className="max-w-7xl mx-auto px-6">{children}</div>
+      <div className="max-w-7xl mx-auto md:px-12 px-6">{children}</div>
     </section>
   );
 }

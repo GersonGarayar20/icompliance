@@ -17,7 +17,7 @@ export default function Hero({ children, image, className }: Props) {
         alt="imagen de fondo"
       />
       <div className={cn("absolute inset-0 z-10 bg-black/50", className)}>
-        <div className="max-w-7xl mx-auto px-6 h-full">{children}</div>
+        <div className="max-w-7xl mx-auto md:px-12 px-6 h-full">{children}</div>
       </div>
     </header>
   );

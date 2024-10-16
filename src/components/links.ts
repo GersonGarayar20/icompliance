@@ -44,7 +44,12 @@ export const links = [
   {
     title: "Eventos",
     link: "https://eventos.icompliancepe.com/eventos/women-in-compliance",
-    subLink: null,
+    subLink: [
+      {
+        title: "Women in Compliance",
+        link: "https://eventos.icompliancepe.com/eventos/women-in-compliance",
+      },
+    ],
   },
   {
     title: "Certificaciones",
