@@ -21,8 +21,12 @@ export default function EventsPage() {
     <div>
       <Hero image="/eventos.jpg">
         <div className="h-full py-32 flex flex-col justify-end gap-6">
-          <p className="text-white text-2xl">Bienvenido a nuestros eventos</p>
-          <h1 className="text-white text-7xl">Participa de nuestros eventos</h1>
+          <p className="text-white md:text-2xl text-xl">
+            Bienvenido a nuestros eventos
+          </p>
+          <h1 className="text-white md:text-7xl text-4xl">
+            Participa de nuestros eventos
+          </h1>
         </div>
       </Hero>
       <div className="bg-[#F5F5F5]">
@@ -37,7 +41,7 @@ export default function EventsPage() {
             {upcomingEvents.length > 0 ? (
               <section className="flex flex-col gap-6">
                 <h3 className="text-4xl">Próximos Eventos</h3>
-                <article className="grid grid-cols-2 gap-6">
+                <article className="grid md:grid-cols-2 gap-6">
                   {upcomingEvents.map(
                     ({ slug, date, location, title, coverImage }) => (
                       <EventCard
@@ -58,7 +62,7 @@ export default function EventsPage() {
             {pastEvents.length > 0 ? (
               <section className="flex flex-col gap-6">
                 <h3 className="text-4xl">Eventos Previos</h3>
-                <article className="grid grid-cols-3 gap-6">
+                <article className="grid md:grid-cols-3 gap-6">
                   {pastEvents.map(
                     ({ slug, date, title, coverImage, location }) => (
                       <EventCard2
