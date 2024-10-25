@@ -15,10 +15,7 @@ interface Props {
     currency: string;
   }[];
   address: string;
-  images: {
-    title: string;
-    image: string;
-  }[];
+  images: string[];
   registrationLink: string;
 }
 
