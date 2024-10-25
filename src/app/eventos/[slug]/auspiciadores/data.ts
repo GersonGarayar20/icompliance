@@ -41,7 +41,7 @@ const plataImages = [
   },
 ];
 
-export const data = [
+export const sponsors = [
   {
     title: "Diamante",
     images: diamanteImages,

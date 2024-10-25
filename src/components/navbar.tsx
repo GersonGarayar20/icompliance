@@ -60,33 +60,18 @@ export default function Navbar() {
             <nav className="2xl:flex gap-3 hidden ">
               {links.map(({ link, subLink, title }) => (
                 <div key={title} className="relative group">
-                  {subLink ? (
-                    <div
-                      className={cn(
-                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
-                        {
-                          "text-[#1f2325]": isScrolled,
-                          "bg-gradient-to-r from-[#52adeb] to-[#014DBE] text-white":
-                            pathname === link,
-                        }
-                      )}
-                    >
-                      {title}
-                      <ChevronDownIcon className="size-4" />
-                    </div>
-                  ) : (
-                    <Link
-                      className={cn(
-                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
-                        {
-                          "text-[#1f2325]": isScrolled,
-                        }
-                      )}
-                      href={link}
-                    >
-                      {title}
-                    </Link>
-                  )}
+                  <Link
+                    className={cn(
+                      "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                      {
+                        "text-[#1f2325]": isScrolled,
+                      }
+                    )}
+                    href={link}
+                  >
+                    {title}{" "}
+                    {subLink ? <ChevronDownIcon className="size-4" /> : null}
+                  </Link>
 
                   {subLink ? (
                     <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">
@@ -109,33 +94,18 @@ export default function Navbar() {
             <nav className="md:flex gap-3 hidden 2xl:hidden">
               {links.slice(0, 3).map(({ link, subLink, title }) => (
                 <div key={title} className="relative group">
-                  {subLink ? (
-                    <div
-                      className={cn(
-                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
-                        {
-                          "text-[#1f2325]": isScrolled,
-                          "bg-gradient-to-r from-[#52adeb] to-[#014DBE] text-white":
-                            pathname === link,
-                        }
-                      )}
-                    >
-                      {title}
-                      <ChevronDownIcon className="size-4" />
-                    </div>
-                  ) : (
-                    <Link
-                      className={cn(
-                        "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
-                        {
-                          "text-[#1f2325]": isScrolled,
-                        }
-                      )}
-                      href={link}
-                    >
-                      {title}
-                    </Link>
-                  )}
+                  <Link
+                    className={cn(
+                      "peer flex items-center gap-3 py-2 px-4 rounded-xl text-white group-hover:bg-gradient-to-r from-[#52adeb] to-[#014DBE] group-hover:text-white",
+                      {
+                        "text-[#1f2325]": isScrolled,
+                      }
+                    )}
+                    href={link}
+                  >
+                    {title}{" "}
+                    {subLink ? <ChevronDownIcon className="size-4" /> : null}
+                  </Link>
 
                   {subLink ? (
                     <nav className="peer-hover:block hidden absolute z-50 top-full hover:block">

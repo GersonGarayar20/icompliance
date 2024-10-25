@@ -43,7 +43,7 @@ export const links = [
   },
   {
     title: "Eventos",
-    link: "https://eventos.icompliancepe.com/eventos/women-in-compliance",
+    link: "https://eventos.icompliancepe.com/eventos",
     subLink: [
       {
         title: "Women in Compliance",
@@ -53,7 +53,7 @@ export const links = [
   },
   {
     title: "Certificaciones",
-    link: "https://icompliancepe.com/certificaciones",
+    link: "#",
     subLink: [
       {
         title: "Certificacion oficial en Proteccion de datos Personales",

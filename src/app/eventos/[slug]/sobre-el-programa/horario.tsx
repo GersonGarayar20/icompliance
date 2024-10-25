@@ -1,7 +1,22 @@
 import React from "react";
-import { data } from "./data";
 
-export default function Horario() {
+interface Props {
+  session: {
+    id: number;
+    title: string;
+    description: string;
+    date: string;
+    time: string;
+    location: string;
+    speakers: {
+      image: string;
+      name: string;
+      position: string;
+    }[];
+  }[];
+}
+
+export default function Horario({ session }: Props) {
   return (
     <div className="bg-white flex flex-col p-6 rounded-2xl border shadow">
       <div className="flex justify-center md:justify-start">
@@ -12,7 +27,7 @@ export default function Horario() {
           </div>
         </button>
       </div>
-      {data.map(({ description, id, speakers, time, title }) => (
+      {session.map(({ description, id, speakers, time, title }) => (
         <div key={id} className="flex md:flex-row flex-col gap-6 border-b py-6">
           <div className="flex-none w-48">
             <div className="bg-gradient-to-r from-[#52adeb] to-[#014DBE] pt-3 pb-2 px-4 rounded-full text-white text-sm text-center">

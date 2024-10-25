@@ -1,6 +1,5 @@
 import Container from "@/components/container";
 import React from "react";
-import { images } from "./images";
 import {
   Carousel,
   CarouselContent,
@@ -9,7 +8,11 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 
-export default function Galeria() {
+interface Props {
+  images: string[];
+}
+
+export default function Galeria({ images }: Props) {
   return (
     <Container>
       <h2 className="md:text-5xl text-3xl text-center mb-6">
@@ -23,13 +26,13 @@ export default function Galeria() {
           }}
         >
           <CarouselContent>
-            {images.map(({ image, title }, index) => (
+            {images.map((url, index) => (
               <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                 <div className="aspect-square">
                   <img
-                    src={image}
+                    src={url}
                     className="w-full h-full object-cover"
-                    alt={title}
+                    alt={url}
                   />
                 </div>
               </CarouselItem>

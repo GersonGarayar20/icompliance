@@ -9,11 +9,15 @@ interface TimeLeft {
   seconds?: number;
 }
 
-const CountdownTimer = () => {
+interface Props {
+  date: string;
+}
+
+const CountdownTimer = ({ date }: Props) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({});
 
   const calculateTimeLeft = () => {
-    const targetDate = new Date("2024-10-04T00:00:00").getTime();
+    const targetDate = new Date(date).getTime();
     const now = new Date().getTime();
     const difference = targetDate - now;
 
@@ -51,7 +55,7 @@ const CountdownTimer = () => {
           <Contador title="Segundos" value={timeLeft.seconds} />
         </div>
       ) : (
-        <span>¡Evento Comenzado!</span>
+        <span className="text-white text-2xl">¡Evento Comenzado!</span>
       )}
     </div>
   );

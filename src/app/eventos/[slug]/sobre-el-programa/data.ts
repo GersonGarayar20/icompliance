@@ -1,4 +1,4 @@
-export const data = [
+export const session = [
   {
     id: 1,
     title: "Registro de asistentes:",
