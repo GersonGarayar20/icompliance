@@ -38,9 +38,9 @@ export default function EventsPage() {
               </header> */}
 
             {/* Próximos Eventos */}
-            {upcomingEvents.length > 0 ? (
-              <section className="flex flex-col gap-6">
-                <h3 className="text-4xl">Próximos Eventos</h3>
+            <section className="flex flex-col gap-6">
+              <h3 className="text-4xl">Próximos Eventos</h3>
+              {upcomingEvents.length > 0 ? (
                 <article className="grid md:grid-cols-2 gap-6">
                   {upcomingEvents.map(
                     ({ slug, date, location, title, coverImage }) => (
@@ -55,8 +55,14 @@ export default function EventsPage() {
                     )
                   )}
                 </article>
-              </section>
-            ) : null}
+              ) : (
+                <div className="py-16">
+                  <p className="md:text-2xl text-center text-gray-500">
+                    Próximamente nuevos eventos. ¡Mantente atento!
+                  </p>
+                </div>
+              )}
+            </section>
 
             {/* Eventos Previos */}
             {pastEvents.length > 0 ? (
