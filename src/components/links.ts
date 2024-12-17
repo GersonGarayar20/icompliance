@@ -53,7 +53,7 @@ export const links = [
   },
   {
     title: "Certificaciones",
-    link: "#",
+    link: "https://icompliancepe.com/certificaciones",
     subLink: [
       {
         title: "Certificacion oficial en Proteccion de datos Personales",
